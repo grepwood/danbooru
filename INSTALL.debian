@@ -89,10 +89,10 @@ sudo -u danbooru ssh-keygen
 
 echo "* Setting up danbooru app..."
 sudo -u danbooru git clone https://github.com/grepwood/danbooru ~danbooru/danbooru
-sudo -u danbooru bash -l -c 'cd ~/danbooru ; bundle'
+su danbooru -c 'cd ~danbooru/danbooru ; bundle'
 
 echo "* Creating a new local git branch called develop"
-sudo -u danbooru bash -l -c 'cd ~danbooru ; git checkout -b develop'
+su danbooru -c 'cd ~danbooru ; git checkout -b develop'
 
 echo "* Almost done! The code has been checked out at ~danbooru/danbooru. You can  "
 echo "* now login as the danbooru user and run the following commands to deploy to "
