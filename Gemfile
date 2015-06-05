@@ -23,8 +23,8 @@ gem "rails", "~> 4.1.8"
 gem "pg"
 gem "kgio", :platforms => :ruby
 gem "dalli", :platforms => :ruby
-gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
-gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
+gem "memcache-client", :platforms => [:mswin, :mingw]
+gem "tzinfo-data", :platforms => [:mswin, :mingw]
 gem "delayed_job"
 gem "delayed_job_active_record"
 gem "simple_form"
