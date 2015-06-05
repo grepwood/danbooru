@@ -88,7 +88,7 @@ echo "* Setting up SSH keys for the danbooru account"
 sudo -u danbooru ssh-keygen
 
 echo "* Setting up danbooru app..."
-sudo -u danbooru git clone https://github.com/grepwood/danbooru ~danbooru/danbooru
+su danbooru -c 'cd ~danbooru ; git clone https://github.com/grepwood/danbooru ~danbooru/danbooru'
 su danbooru -c 'cd ~danbooru/danbooru ; bundle'
 
 echo "* Creating a new local git branch called develop"
